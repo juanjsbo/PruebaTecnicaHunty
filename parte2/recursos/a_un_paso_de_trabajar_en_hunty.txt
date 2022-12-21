@@ -1,0 +1,18 @@
+CREATE VIEW `strong-eon-372023.mst_test_hunty.a_un_paso_de_trabajar_en_hunty`
+AS
+  SELECT
+    T2.user_id
+    ,CASE WHEN T2.first_name = '' THEN 'None' ELSE T2.first_name END first_name
+    ,CASE WHEN T2.last_name = '' THEN 'None' ELSE T2.last_name END last_name
+    ,CASE WHEN T2.Phone = '' THEN 'None' ELSE T2.Phone END Phone
+    ,T2.load_date
+    ,CASE WHEN T1.vacancy_area_id = '' THEN 'None' ELSE T1.vacancy_area_id END vacancy_area_id
+    ,CASE WHEN T1.location_change_city_ids = '' THEN 'None' ELSE T1.location_change_city_ids END location_change_city_ids
+    ,CASE WHEN T1.available_time_week_id = '' THEN 'None' ELSE T1.available_time_week_id END available_time_week_id
+    ,CASE WHEN T1.vacancy_area_custom = '' THEN 'None' ELSE T1.vacancy_area_custom END vacancy_area_custom
+    ,CASE WHEN T1.change_city = '' THEN 'None' ELSE T1.change_city END change_city
+    ,T1.years
+    ,T1.months
+  FROM 
+    `strong-eon-372023.mst_test_hunty.mst_user_extra_info` T1 INNER JOIN `strong-eon-372023.mst_test_hunty.mst_main_user_info` T2
+    ON T1.user_id = T2.user_id

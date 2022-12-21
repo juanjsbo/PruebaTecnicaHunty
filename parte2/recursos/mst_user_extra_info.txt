@@ -1,0 +1,17 @@
+CREATE OR REPLACE TABLE `strong-eon-372023.mst_test_hunty.mst_user_extra_info`
+AS
+  SELECT 
+    user_id
+    ,vacancy_area_id
+    ,location_change_city_ids
+    ,available_time_week_id
+    ,vacancy_area_custom
+    ,change_city
+    ,years
+    ,months  
+  FROM 
+    `strong-eon-372023.raw_test_hunty.raw_user_extra_info`
+  WHERE
+    recurrencia_item > 1
+    AND (CAST(CASE WHEN vacancy_area_id = '' THEN '0' ELSE vacancy_area_id END AS FLOAT64) >= 2
+    OR (CAST(CASE WHEN vacancy_area_id = '' THEN '0' ELSE vacancy_area_id END AS FLOAT64) < 2 AND employment_status = '0'))

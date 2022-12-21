@@ -1,0 +1,30 @@
+[
+  {
+    "office_modality_id": 1,
+    "office_modality": "Remoto",
+    "description": "Es siempre remoto",
+    "last_update_date": "2022-05-11",
+    "disponibility": "ApplicationForm, P2P"
+  },
+  {
+    "office_modality_id": 2,
+    "office_modality": "Presencial",
+    "description": "Se debe trabajar 100% en una oficina",
+    "last_update_date": "2022-05-11",
+    "disponibility": "ApplicationForm, P2P"
+  },
+  {
+    "office_modality_id": 3,
+    "office_modality": "Híbrido",
+    "description": "Modalidad flexible, algunos días es posible trabjar desde casa",
+    "last_update_date": "2022-05-11",
+    "disponibility": "ApplicationForm, P2P"
+  },
+  {
+    "office_modality_id": 4,
+    "office_modality": "Indiferente",
+    "description": "Es indiferente el lugar de trabajo",
+    "last_update_date": "2022-05-11",
+    "disponibility": "ApplicationForm"
+  }
+]

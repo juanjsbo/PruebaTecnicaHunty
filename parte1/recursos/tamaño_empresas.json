@@ -1,0 +1,27 @@
+[
+  {
+    "size_range_id": 1,
+    "size_range": "1-10",
+    "company_type": "Microempresa"
+  },
+  {
+    "size_range_id": 2,
+    "size_range": "11-50",
+    "company_type": "Pequeña"
+  },
+  {
+    "size_range_id": 3,
+    "size_range": "51-250",
+    "company_type": "Mediana"
+  },
+  {
+    "size_range_id": 4,
+    "size_range": "251-1000",
+    "company_type": "Medio-Grande"
+  },
+  {
+    "size_range_id": 5,
+    "size_range": "+1000",
+    "company_type": "Grande"
+  }
+]

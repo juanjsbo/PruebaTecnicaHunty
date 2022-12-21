@@ -1,0 +1,10 @@
+CREATE OR REPLACE TABLE `strong-eon-372023.mst_test_hunty.mst_main_user_info`
+AS
+  SELECT
+    user_id
+    ,first_name
+    ,INITCAP(LOWER(last_name)) last_name
+    ,Phone
+    ,CAST(CAST(load_date AS TIMESTAMP) AS DATE) load_date
+  FROM
+    `strong-eon-372023.raw_test_hunty.raw_main_user_info`
